@@ -1,0 +1,17 @@
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.deps.json
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.runtimeconfig.json
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.runtimeconfig.dev.json
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.DataAccess.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Domain.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Domain.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.DataAccess.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.csproj.CoreCompileInputs.cache
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.AssemblyInfoInputs.cache
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.AssemblyInfo.cs
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.csproj.CopyComplete
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.pdb

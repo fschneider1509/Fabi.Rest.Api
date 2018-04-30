@@ -1,0 +1,11 @@
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.deps.json
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.csproj.CoreCompileInputs.cache
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.AssemblyInfoInputs.cache
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.AssemblyInfo.cs
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.Logging.dll
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.Logging.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.csproj.CopyComplete
