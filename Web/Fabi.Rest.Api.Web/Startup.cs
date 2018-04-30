@@ -1,4 +1,6 @@
-﻿using Fabi.Rest.Api.Logging.Legacy;
+﻿using Fabi.Rest.Api.Domain.Legacy;
+using Fabi.Rest.Api.Domain.Services;
+using Fabi.Rest.Api.Logging.Legacy;
 using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,7 @@ namespace Fabi.Rest.Api.Web
         private void DependencyRegistration(IServiceCollection services) 
         {
             services.AddSingleton<IRestApiLogger, RestApiLogger>();
+            services.AddSingleton<ICustomerService, CustomerService>();
         }
     }
 }
