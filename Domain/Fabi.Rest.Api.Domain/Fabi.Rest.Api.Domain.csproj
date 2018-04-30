@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\DataAccess\Fabi.Rest.Api.DataAccess\Fabi.Rest.Api.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Logging\Fabi.Rest.Api.Logging\Fabi.Rest.Api.Logging.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

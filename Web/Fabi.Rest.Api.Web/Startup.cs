@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Fabi.Rest.Api.Logging.Legacy;
+using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace Fabi.Rest.Api.Web
 {
@@ -24,6 +20,7 @@ namespace Fabi.Rest.Api.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            DependencyRegistration(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +32,11 @@ namespace Fabi.Rest.Api.Web
             }
 
             app.UseMvc();
+        }
+
+        private void DependencyRegistration(IServiceCollection services) 
+        {
+            services.AddSingleton<IRestApiLogger, RestApiLogger>();
         }
     }
 }
