@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Fabi.Rest.Api.Web
 {
@@ -20,6 +21,12 @@ namespace Fabi.Rest.Api.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSwaggerGen(g => {
+                g.SwaggerDoc("v1", new Info{
+                   Title = "Fabis ASP DotNetCore REST Api for Testing",
+                   Version = "v1" 
+                });
+            });
             DependencyRegistration(services);
         }
 
@@ -30,6 +37,11 @@ namespace Fabi.Rest.Api.Web
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(s => {
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "Fabis ASP DotNetCore REST Api for Testing (v1)");
+            });
 
             app.UseMvc();
         }
