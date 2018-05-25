@@ -9,3 +9,4 @@
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.Logging.dll
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/bin/Debug/netstandard2.0/Fabi.Rest.Api.Logging.pdb
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.csproj.CopyComplete
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/obj/Debug/netstandard2.0/Fabi.Rest.Api.DataAccess.csprojResolveAssemblyReference.cache

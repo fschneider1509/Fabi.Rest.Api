@@ -16,3 +16,4 @@
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess.Tests/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.DataAccess.Tests.pdb
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess.Tests/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.dll
 /Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess.Tests/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess.Tests/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.DataAccess.Tests.csprojResolveAssemblyReference.cache
