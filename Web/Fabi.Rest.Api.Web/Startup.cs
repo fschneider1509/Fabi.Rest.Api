@@ -1,4 +1,5 @@
-﻿using Fabi.Rest.Api.Domain.Legacy;
+﻿using Fabi.Rest.Api.DataAccess.UnitOfWork;
+using Fabi.Rest.Api.Domain.Legacy;
 using Fabi.Rest.Api.Domain.Services;
 using Fabi.Rest.Api.Logging.Legacy;
 using Fabi.Rest.Api.Logging.Logging;
@@ -23,6 +24,7 @@ namespace Fabi.Rest.Api.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddAutoMapper();
             services.AddSwaggerGen(g => {
                 g.SwaggerDoc("v1", new Info{
                    Title = "Fabis ASP DotNetCore REST Api for Testing",
@@ -52,6 +54,7 @@ namespace Fabi.Rest.Api.Web
         {
             services.AddSingleton<IRestApiLogger, RestApiLogger>();
             services.AddSingleton<ICustomerService, CustomerService>();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
         }
     }
 }

@@ -21,8 +21,13 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
         }
 
         protected virtual void Dispose(bool disposing){  
-        if (disposing){  
-              
-        }  
+            if (disposing){  
+                foreach (var property in GetType().GetProperties())
+                {
+                    var disposable = property.GetValue(this) as IDisposable;
+                    disposable?.Dispose();
+                }
+            }  
+        }
     }
 }

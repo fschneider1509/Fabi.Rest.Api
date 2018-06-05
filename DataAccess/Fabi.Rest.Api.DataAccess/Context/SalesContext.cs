@@ -6,9 +6,7 @@ namespace Fabi.Rest.Api.DataAccess.Context
     public class SalesContext : DbContext
     {
         public SalesContext(DbContextOptions<SalesContext> options) : base(options) 
-        {
-
-        }
+        {}
         public DbSet<CustomerModel> Customers { get; set; } 
     }
 }
