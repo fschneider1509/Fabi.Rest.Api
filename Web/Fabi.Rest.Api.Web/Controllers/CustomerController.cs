@@ -28,6 +28,7 @@ namespace Fabi.Rest.Api.Web.Controllers
             ApiLogger.Info("Getting all customers!");
             try
             {
+                await Task.Delay(3000);
                 var customers = await _customerService.LoadAllCustomersAsync();
                 return Ok(customers);
             } catch(Exception ex) 

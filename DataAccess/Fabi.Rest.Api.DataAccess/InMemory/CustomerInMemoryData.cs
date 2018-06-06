@@ -22,6 +22,22 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Address = "One Microsoft Way Redmond, WA 98052-7329, USA",
                 ContactPerson = "Satya Nadella"
             };
+
+            yield return new CustomerModel
+            {
+                Id = 3,
+                Name = "GitHub",
+                Address = "88 Colin P Kelly Jr. St, USA",
+                ContactPerson = "Nat Friedman"
+            };
+
+            yield return new CustomerModel
+            {
+                Id = 4,
+                Name = "SAP SE",
+                Address = "Dietmar-Hopp-Alee 16, Germany",
+                ContactPerson = "Bill McDermott"
+            };
         }
     }
 }
