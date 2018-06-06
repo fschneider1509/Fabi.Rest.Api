@@ -27,24 +27,6 @@ namespace Fabi.Rest.Api.Domain.Legacy
         {
             var result = await _unitOfWork.CustomerRepository.LoadAllCustomers();
             return result.Select(s => Mapper.Map<CustomerDto>(s));
-            // var customers = new List<CustomerDto>
-            // {
-            //     new CustomerDto 
-            //     {
-            //         Id = 4711,
-            //         Name = "Apple Store Munich",
-            //         Address = "Rosenstraße 1, 80331 München",
-            //         ContactPerson = "Tim Cook"
-            //     },
-            //     new CustomerDto 
-            //     {
-            //         Id = 1509,
-            //         Name = "Microsoft Deutschland",
-            //         Address = "Walter-Gropius-Straße 5, 80807 München",
-            //         ContactPerson = "Satya Nadella"
-            //     }
-            // };
-            // return await Task.FromResult<IEnumerable<CustomerDto>>(customers);
         }
     }
 }

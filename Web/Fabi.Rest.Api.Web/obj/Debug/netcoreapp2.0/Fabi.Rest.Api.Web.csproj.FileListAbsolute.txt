@@ -15,3 +15,4 @@
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.pdb
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.dll
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/bin/Debug/netcoreapp2.0/Fabi.Rest.Api.Logging.pdb
+/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/obj/Debug/netcoreapp2.0/Fabi.Rest.Api.Web.csprojResolveAssemblyReference.cache

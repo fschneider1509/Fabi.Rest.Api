@@ -1,4 +1,5 @@
-﻿using Fabi.Rest.Api.DataAccess.UnitOfWork;
+﻿using AutoMapper;
+using Fabi.Rest.Api.DataAccess.UnitOfWork;
 using Fabi.Rest.Api.Domain.Legacy;
 using Fabi.Rest.Api.Domain.Services;
 using Fabi.Rest.Api.Logging.Legacy;
@@ -19,8 +20,7 @@ namespace Fabi.Rest.Api.Web
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
