@@ -14,12 +14,12 @@ namespace Fabi.Rest.Api.Web
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
         
         public void ConfigureServices(IServiceCollection services)
         {
@@ -53,8 +53,6 @@ namespace Fabi.Rest.Api.Web
         private void DependencyRegistration(IServiceCollection services) 
         {
             services.AddSingleton<IRestApiLogger, RestApiLogger>();
-            services.AddSingleton<ICustomerService, CustomerService>();
-            services.AddSingleton<IUnitOfWork, UnitOfWork>();
         }
     }
 }

@@ -1,18 +1,21 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Fabi.Rest.Api.DataAccess.Context;
 using Fabi.Rest.Api.DataAccess.Models;
 using Fabi.Rest.Api.DataAccess.Repositories;
+using Fabi.Rest.Api.Logging.Logging;
 
 namespace Fabi.Rest.Api.DataAccess.Legacy
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : RepositoryBase, ICustomerRepository
     {
-        private SalesContext _salesContext;
-        public CustomerRepository(SalesContext salesContext) 
+        private readonly SalesContext _salesContext;
+
+        public CustomerRepository(SalesContext salesContext, IRestApiLogger apiLogger) : base(apiLogger)
         {
-            _salesContext = salesContext;
+            _salesContext = salesContext ?? throw new ArgumentNullException(nameof(salesContext));
         }
 
         public Task<IEnumerable<CustomerModel>> LoadAllCustomers()

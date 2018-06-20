@@ -3,17 +3,17 @@ using System;
 using Fabi.Rest.Api.Domain.Services;
 using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Mvc;
+using Fabi.Rest.Api.Domain.Legacy;
+using Fabi.Rest.Api.DataAccess.UnitOfWork;
+using AutoMapper;
 
 namespace Fabi.Rest.Api.Web.Controllers
 {
     [Route("api/v1/customer")]
     public class CustomerController : ApiBaseController
     {
-        private readonly ICustomerService _customerService;
-        public CustomerController(IRestApiLogger apiLogger, ICustomerService customerService) : base(apiLogger)
-        {
-            _customerService = customerService ?? throw new ArgumentNullException(nameof(customerService));
-        }
+        public CustomerController(IRestApiLogger apiLogger, IMapper mapper) : base(apiLogger, mapper)
+        {}
 
         /// <summary>
         /// Get all available customers.
@@ -26,15 +26,18 @@ namespace Fabi.Rest.Api.Web.Controllers
         public async Task<IActionResult> GetAll() 
         {
             ApiLogger.Info("Getting all customers!");
-            try
+            using(var customerService = new CustomerService(ApiLogger, new UnitOfWork(ApiLogger), Mapper))
             {
-                await Task.Delay(3000);
-                var customers = await _customerService.LoadAllCustomersAsync();
-                return Ok(customers);
-            } catch(Exception ex) 
-            {
-                ApiLogger.Error("Error while getting all customers!", ex: ex);
-                return StatusCode(500);
+                try
+                {
+                    await Task.Delay(3000);
+                    var customers = await customerService.LoadAllCustomersAsync();
+                    return Ok(customers);
+                } catch(Exception ex) 
+                {
+                    ApiLogger.Error("Error while getting all customers!", ex: ex);
+                    return StatusCode(500);
+                }
             }
         }
     }
