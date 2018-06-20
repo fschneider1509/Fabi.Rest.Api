@@ -27,7 +27,7 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
 
         public void Dispose()
         {
-            _apiLogger.Info("Disposing UnitOfWork...");
+            _apiLogger.Info($"Disposing the {this.GetType().ToString()} ...");
             Dispose(true);  
             GC.SuppressFinalize(this);
         }
@@ -39,7 +39,6 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
                     var disposable = property.GetValue(this) as IDisposable;
                     disposable?.Dispose();
                 }
-                _salesContext?.Dispose();
             }  
         }
 

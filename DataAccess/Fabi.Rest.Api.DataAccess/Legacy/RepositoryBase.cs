@@ -25,11 +25,7 @@ namespace Fabi.Rest.Api.DataAccess.Legacy
             {
                 if (disposing)
                 {
-                    foreach (var property in GetType().GetProperties())
-                    {
-                        var disposable = property.GetValue(this) as IDisposable;
-                        disposable?.Dispose();
-                    }
+                    // Nothing...
                 }
                 _disposedValue = true;
             }
