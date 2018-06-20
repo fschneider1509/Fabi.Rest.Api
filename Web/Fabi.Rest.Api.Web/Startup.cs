@@ -1,4 +1,8 @@
-﻿using Fabi.Rest.Api.Logging.Legacy;
+﻿using AutoMapper;
+using Fabi.Rest.Api.DataAccess.UnitOfWork;
+using Fabi.Rest.Api.Domain.Legacy;
+using Fabi.Rest.Api.Domain.Services;
+using Fabi.Rest.Api.Logging.Legacy;
 using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,17 +14,17 @@ namespace Fabi.Rest.Api.Web
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddAutoMapper();
             services.AddSwaggerGen(g => {
                 g.SwaggerDoc("v1", new Info{
                    Title = "Fabis ASP DotNetCore REST Api for Testing",

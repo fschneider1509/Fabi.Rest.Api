@@ -1,40 +1,44 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Fabi.Rest.Api.Domain.Dto;
+using System;
+using Fabi.Rest.Api.Domain.Services;
 using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Mvc;
+using Fabi.Rest.Api.Domain.Legacy;
+using Fabi.Rest.Api.DataAccess.UnitOfWork;
+using AutoMapper;
 
 namespace Fabi.Rest.Api.Web.Controllers
 {
     [Route("api/v1/customer")]
     public class CustomerController : ApiBaseController
     {
-        public CustomerController(IRestApiLogger apiLogger) : base(apiLogger)
+        public CustomerController(IRestApiLogger apiLogger, IMapper mapper) : base(apiLogger, mapper)
         {}
 
+        /// <summary>
+        /// Get all available customers.
+        /// </summary>
+        /// <returns>List of customers.</returns>
+        /// <response code="200">All customers were loaded successfully.</response>
+        /// <response code="500">Error while loading all customers.</response>
         [HttpGet]
         [Route("all")]
         public async Task<IActionResult> GetAll() 
         {
             ApiLogger.Info("Getting all customers!");
-            var customers = new List<CustomerDto>
+            using(var customerService = new CustomerService(ApiLogger, new UnitOfWork(ApiLogger), Mapper))
             {
-                new CustomerDto 
+                try
                 {
-                    Id = 4711,
-                    Name = "Apple Store Munich",
-                    Address = "Rosenstraße 1, 80331 München",
-                    ContactPerson = "Tim Cook"
-                },
-                new CustomerDto 
+                    await Task.Delay(3000);
+                    var customers = await customerService.LoadAllCustomersAsync();
+                    return Ok(customers);
+                } catch(Exception ex) 
                 {
-                    Id = 1509,
-                    Name = "Microsoft Deutschland",
-                    Address = "Walter-Gropius-Straße 5, 80807 München",
-                    ContactPerson = "Satya Nadella"
+                    ApiLogger.Error("Error while getting all customers!", ex: ex);
+                    return StatusCode(500);
                 }
-            };
-            return await Task.FromResult<IActionResult>(new ObjectResult(customers));
+            }
         }
     }
 }
