@@ -13,13 +13,10 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
         private readonly SalesContext _salesContext;
         private readonly IRestApiLogger _apiLogger;
 
-        public UnitOfWork(IRestApiLogger apiLogger) 
+        public UnitOfWork(IRestApiLogger apiLogger, SalesContext salesContext) 
         {
             _apiLogger = apiLogger ?? throw new ArgumentNullException(nameof(apiLogger));
-
-            _salesContext = CreateSalesContext();
-            _salesContext.Customers.AddRange(CustomerInMemoryData.GetCustomerInMemoryData());
-            _salesContext.SaveChanges();
+            _salesContext = salesContext ?? throw new ArgumentNullException(nameof(salesContext));
             CustomerRepository = new CustomerRepository(_salesContext, _apiLogger);
         }
 
@@ -40,14 +37,6 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
                     disposable?.Dispose();
                 }
             }  
-        }
-
-        private SalesContext CreateSalesContext()
-        {
-            var dbOptions = new DbContextOptionsBuilder<SalesContext>()
-                .UseInMemoryDatabase(databaseName: "Fabi_Rest_Api_Db")
-                .Options;
-            return new SalesContext(dbOptions);
         }
     }
 }

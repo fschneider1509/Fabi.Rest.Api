@@ -5332,6 +5332,7 @@
         "dependencies": {
           "AutoMapper": "7.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "4.0.0",
+          "Fabi.Rest.Api.DataAccess": "1.0.0",
           "Fabi.Rest.Api.Domain": "1.0.0",
           "Fabi.Rest.Api.Logging": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.7",

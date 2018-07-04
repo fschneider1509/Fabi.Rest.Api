@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Fabi.Rest.Api.Domain.Legacy;
 using Fabi.Rest.Api.DataAccess.UnitOfWork;
 using AutoMapper;
+using Fabi.Rest.Api.DataAccess.Context;
 
 namespace Fabi.Rest.Api.Web.Controllers
 {
     [Route("api/v1/customer")]
     public class CustomerController : ApiBaseController
     {
-        public CustomerController(IRestApiLogger apiLogger, IMapper mapper) : base(apiLogger, mapper)
+        public CustomerController(IRestApiLogger apiLogger, IMapper mapper, SalesContext salesContext) : base(apiLogger, mapper, salesContext)
         {}
 
         /// <summary>
@@ -26,11 +27,11 @@ namespace Fabi.Rest.Api.Web.Controllers
         public async Task<IActionResult> GetAll() 
         {
             ApiLogger.Info("Getting all customers!");
-            using(var customerService = new CustomerService(ApiLogger, new UnitOfWork(ApiLogger), Mapper))
+            using(var customerService = new CustomerService(ApiLogger, new UnitOfWork(ApiLogger, SalesContext), Mapper))
             {
                 try
                 {
-                    await Task.Delay(3000);
+                    await Task.Delay(1000);
                     var customers = await customerService.LoadAllCustomersAsync();
                     return Ok(customers);
                 } catch(Exception ex) 

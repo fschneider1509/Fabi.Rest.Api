@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Fabi.Rest.Api.Domain\Fabi.Rest.Api.Domain.csproj" />
     <ProjectReference Include="..\..\Logging\Fabi.Rest.Api.Logging\Fabi.Rest.Api.Logging.csproj" />
+    <ProjectReference Include="..\..\DataAccess\Fabi.Rest.Api.DataAccess\Fabi.Rest.Api.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
