@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Fabi.Rest.Api.DataAccess.Context
 {
-    public class SalesContext : DbContextBase, ISalesContext
+    public class SalesContext : DbContextBase
     {
         public SalesContext(DbContextOptions<SalesContext> options, IRestApiLogger apiLogger) : base(options, apiLogger) 
         {}
