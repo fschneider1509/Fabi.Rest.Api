@@ -10,5 +10,6 @@ namespace Fabi.Rest.Api.DataAccess.Context
         public SalesContext(DbContextOptions<SalesContext> options, IRestApiLogger apiLogger) : base(options, apiLogger) 
         {}
         public DbSet<CustomerModel> Customers { get; set; } 
+        public DbSet<AppModel> Apps { get; set; }
     }
 }

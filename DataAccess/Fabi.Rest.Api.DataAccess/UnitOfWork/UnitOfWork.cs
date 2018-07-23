@@ -17,16 +17,23 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
         {
             _apiLogger = apiLogger ?? throw new ArgumentNullException(nameof(apiLogger));
             _salesContext = salesContext ?? throw new ArgumentNullException(nameof(salesContext));
-            CustomerRepository = new CustomerRepository(_salesContext, _apiLogger);
+            InitializeRepositories();
         }
 
         public ICustomerRepository CustomerRepository { get; set; }
+        public IAppRepository AppRepository { get; set; }
 
         public void Dispose()
         {
             _apiLogger.Info($"Disposing the {this.GetType().ToString()} ...");
             Dispose(true);  
             GC.SuppressFinalize(this);
+        }
+
+        private void InitializeRepositories() 
+        {
+            CustomerRepository = new CustomerRepository(_salesContext, _apiLogger);
+            AppRepository = new AppRepository(_salesContext, _apiLogger);
         }
 
         protected virtual void Dispose(bool disposing){  

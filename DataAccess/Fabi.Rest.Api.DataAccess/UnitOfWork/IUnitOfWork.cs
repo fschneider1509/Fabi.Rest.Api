@@ -6,5 +6,7 @@ namespace Fabi.Rest.Api.DataAccess.UnitOfWork
     public interface IUnitOfWork : IDisposable
     {
          ICustomerRepository CustomerRepository { get; set; }
+
+         IAppRepository AppRepository { get; set; }
     }
 }
