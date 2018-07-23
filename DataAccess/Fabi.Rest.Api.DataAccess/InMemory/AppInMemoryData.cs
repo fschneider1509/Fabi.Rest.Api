@@ -14,7 +14,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "App for service order processing with XXX.",
                 Version = "1.29.6.0",
                 Icon = "",
-                IsBeta = false
+                IsBeta = false,
+                AppType = 1
             };
 
             yield return new AppModel 
@@ -24,7 +25,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "App for service order processing with XXX.",
                 Version = "1.29.7.0",
                 Icon = "",
-                IsBeta = true
+                IsBeta = true,
+                AppType = 1
             };
 
             yield return new AppModel 
@@ -34,7 +36,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "Product Information App.",
                 Version = "2.2.5",
                 Icon = "",
-                IsBeta = false
+                IsBeta = false,
+                AppType = 2
             };
 
             yield return new AppModel 
@@ -44,7 +47,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "App for generating customer leads.",
                 Version = "4.5",
                 Icon = "",
-                IsBeta = false
+                IsBeta = false,
+                AppType = 3
             };
 
             yield return new AppModel 
@@ -54,7 +58,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "Manage the machines that belong to the customers machine park",
                 Version = "0.5.1",
                 Icon = "",
-                IsBeta = true
+                IsBeta = true,
+                AppType = 1
             };
 
             yield return new AppModel 
@@ -64,7 +69,8 @@ namespace Fabi.Rest.Api.DataAccess.InMemory
                 Description = "Invenoty management app for technicians.",
                 Version = "1.0.0",
                 Icon = "",
-                IsBeta = true
+                IsBeta = true,
+                AppType = 2
             };
 
         }

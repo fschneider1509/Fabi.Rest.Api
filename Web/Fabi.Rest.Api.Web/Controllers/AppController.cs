@@ -1,6 +1,9 @@
+using System;
 using System.Threading.Tasks;
 using AutoMapper;
 using Fabi.Rest.Api.DataAccess.Context;
+using Fabi.Rest.Api.DataAccess.UnitOfWork;
+using Fabi.Rest.Api.Domain.Legacy;
 using Fabi.Rest.Api.Logging.Logging;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,8 +26,20 @@ namespace Fabi.Rest.Api.Web.Controllers
         public async Task<IActionResult> GetAll() 
         {
             ApiLogger.Info("Getting all available apps!");
-            await Task.Delay(2000);
-            return await Task.FromResult(Ok());
+            using(var appService = new AppService(ApiLogger, new UnitOfWork(ApiLogger, SalesContext), Mapper)) 
+            {
+                try 
+                {
+                    await Task.Delay(2000);
+                    var apps = await appService.LoadAllAppsAsync();
+                    return Ok(apps);
+                }
+                catch(Exception ex) 
+                {
+                    ApiLogger.Error("Error while getting all apps!", ex: ex);
+                    return StatusCode(500);
+                }
+            }
         }
     }
 }

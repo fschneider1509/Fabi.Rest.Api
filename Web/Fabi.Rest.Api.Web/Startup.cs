@@ -68,6 +68,7 @@ namespace Fabi.Rest.Api.Web
 
             var salesContext = new SalesContext(databaseOptions, serviceProvider.GetService<IRestApiLogger>());
             salesContext.Customers.AddRange(CustomerInMemoryData.GetCustomerInMemoryData());
+            salesContext.Apps.AddRange(AppInMemoryData.GetAppInMemoryData());
             salesContext.SaveChanges();
             services.AddSingleton<SalesContext>(salesContext);
         }
