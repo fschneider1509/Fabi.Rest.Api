@@ -26,7 +26,15 @@ namespace Fabi.Rest.Api.Web
         
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddMvc();
+            services.AddCors(options => options.AddPolicy("AllowAll", p => 
+            {
+                p.AllowAnyHeader();
+                p.AllowAnyMethod();
+                p.AllowAnyOrigin();
+                p.AllowCredentials();
+            }));
             services.AddAutoMapper();
             services.AddSwaggerGen(g => {
                 g.SwaggerDoc("v1", new Info{
@@ -50,7 +58,7 @@ namespace Fabi.Rest.Api.Web
             app.UseSwaggerUI(s => {
                 s.SwaggerEndpoint("/swagger/v1/swagger.json", "Fabis ASP DotNetCore REST Api for Testing (v1)");
             });
-
+            app.UseCors("AllowAll");
             app.UseMvc();
         }
 
