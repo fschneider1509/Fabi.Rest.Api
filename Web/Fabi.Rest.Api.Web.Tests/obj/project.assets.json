@@ -7252,7 +7252,7 @@
       ]
     },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
+      "sha512": "FBYxU3jnqhPITc606tHA/a+pA6etGlH7Jz9SZMOAIABg1GC3caVUx0FYTgVMohUQ/RcQYfk4af20UdLldwhZXg==",
       "type": "package",
       "path": "microsoft.extensions.platformabstractions/1.1.0",
       "files": [
@@ -8439,7 +8439,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "eS0nRVaXEa5fXDRWSwTaX8KAXFeasnN9h54Tzif3psr5Al9KLQYG5bw00wUAkaLH064q3wZzidRf7+Gzh5aHXg==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -10978,7 +10978,7 @@
       ]
     },
     "System.Net.Security/4.3.0": {
-      "sha512": "IgJKNfALqw7JRWp5LMQ5SWHNKvXVz094U6wNE3c1i8bOkMQvgBL+MMQuNt3xl9Qg9iWpj3lFxPZEY6XHmROjMQ==",
+      "sha512": "vWHCm1lo+eDN356dWsVkWxCq4zP2Dt0GlwQB6uOQ7ZpysStx73bWGyjXhubg2RHKnrK/mSXJNxsSse3Qs2rDog==",
       "type": "package",
       "path": "system.net.security/4.3.0",
       "files": [
@@ -13710,7 +13710,7 @@
       ]
     },
     "xunit.analyzers/0.7.0": {
-      "sha512": "pEjPJ/pd+r9blGBJ9bXg961phkAiCl4k2DwxwWGEZyYC/7Tb1xJ1az0H18uGANX7zFIkvE5ZO1eZZ4vU7gny7w==",
+      "sha512": "YLyB3zDIbuliqMPOeGNp4BbNKrAMmoU0RI3DqJrPIaHJ2u1l3c9hILxUgY2DoKN2nSRgaIhGVdZ4tNSDtnaZQg==",
       "type": "package",
       "path": "xunit.analyzers/0.7.0",
       "files": [
@@ -13831,35 +13831,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/fabi/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\schnf\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web.Tests/Fabi.Rest.Api.Web.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Web\\Fabi.Rest.Api.Web.Tests\\Fabi.Rest.Api.Web.Tests.csproj",
       "projectName": "Fabi.Rest.Api.Web.Tests",
-      "projectPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web.Tests/Fabi.Rest.Api.Web.Tests.csproj",
-      "packagesPath": "/Users/fabi/.nuget/packages/",
-      "outputPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web.Tests/obj/",
+      "projectPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Web\\Fabi.Rest.Api.Web.Tests\\Fabi.Rest.Api.Web.Tests.csproj",
+      "packagesPath": "C:\\Users\\schnf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Web\\Fabi.Rest.Api.Web.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/fabi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\schnf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://sis-test.bizerba.com/packages/nuget/": {},
+        "https://sis.bizerba.com/packages/nuget/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/Fabi.Rest.Api.Web.csproj": {
-              "projectPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Web/Fabi.Rest.Api.Web/Fabi.Rest.Api.Web.csproj"
+            "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Web\\Fabi.Rest.Api.Web\\Fabi.Rest.Api.Web.csproj": {
+              "projectPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Web\\Fabi.Rest.Api.Web\\Fabi.Rest.Api.Web.csproj"
             }
           }
         }

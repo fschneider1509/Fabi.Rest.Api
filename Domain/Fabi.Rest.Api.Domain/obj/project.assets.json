@@ -1003,7 +1003,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "eS0nRVaXEa5fXDRWSwTaX8KAXFeasnN9h54Tzif3psr5Al9KLQYG5bw00wUAkaLH064q3wZzidRf7+Gzh5aHXg==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -2628,38 +2628,42 @@
     ]
   },
   "packageFolders": {
-    "/Users/fabi/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\schnf\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Domain/Fabi.Rest.Api.Domain/Fabi.Rest.Api.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Domain\\Fabi.Rest.Api.Domain\\Fabi.Rest.Api.Domain.csproj",
       "projectName": "Fabi.Rest.Api.Domain",
-      "projectPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Domain/Fabi.Rest.Api.Domain/Fabi.Rest.Api.Domain.csproj",
-      "packagesPath": "/Users/fabi/.nuget/packages/",
-      "outputPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Domain/Fabi.Rest.Api.Domain/obj/",
+      "projectPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Domain\\Fabi.Rest.Api.Domain\\Fabi.Rest.Api.Domain.csproj",
+      "packagesPath": "C:\\Users\\schnf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Domain\\Fabi.Rest.Api.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/fabi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\schnf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://sis-test.bizerba.com/packages/nuget/": {},
+        "https://sis.bizerba.com/packages/nuget/": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/Fabi.Rest.Api.DataAccess.csproj": {
-              "projectPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/DataAccess/Fabi.Rest.Api.DataAccess/Fabi.Rest.Api.DataAccess.csproj"
+            "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\DataAccess\\Fabi.Rest.Api.DataAccess\\Fabi.Rest.Api.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\DataAccess\\Fabi.Rest.Api.DataAccess\\Fabi.Rest.Api.DataAccess.csproj"
             },
-            "/Users/fabi/Code/csharp/Fabi.Rest.Api/Logging/Fabi.Rest.Api.Logging/Fabi.Rest.Api.Logging.csproj": {
-              "projectPath": "/Users/fabi/Code/csharp/Fabi.Rest.Api/Logging/Fabi.Rest.Api.Logging/Fabi.Rest.Api.Logging.csproj"
+            "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Logging\\Fabi.Rest.Api.Logging\\Fabi.Rest.Api.Logging.csproj": {
+              "projectPath": "C:\\Users\\schnf\\source\\repos\\Fabi.Rest.Api\\Logging\\Fabi.Rest.Api.Logging\\Fabi.Rest.Api.Logging.csproj"
             }
           }
         }

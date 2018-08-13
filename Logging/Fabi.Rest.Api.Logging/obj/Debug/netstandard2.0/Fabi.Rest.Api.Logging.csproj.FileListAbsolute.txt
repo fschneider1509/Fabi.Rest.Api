@@ -6,3 +6,12 @@
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Logging/Fabi.Rest.Api.Logging/obj/Debug/netstandard2.0/Fabi.Rest.Api.Logging.AssemblyInfo.cs
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Logging/Fabi.Rest.Api.Logging/obj/Debug/netstandard2.0/Fabi.Rest.Api.Logging.dll
 /Users/fabi/Code/csharp/Fabi.Rest.Api/Logging/Fabi.Rest.Api.Logging/obj/Debug/netstandard2.0/Fabi.Rest.Api.Logging.pdb
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\bin\Debug\netstandard2.0\Fabi.Rest.Api.Logging.deps.json
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\bin\Debug\netstandard2.0\Fabi.Rest.Api.Logging.dll
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\bin\Debug\netstandard2.0\Fabi.Rest.Api.Logging.pdb
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.csprojAssemblyReference.cache
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.csproj.CoreCompileInputs.cache
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.AssemblyInfoInputs.cache
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.AssemblyInfo.cs
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.dll
+C:\Users\schnf\source\repos\Fabi.Rest.Api\Logging\Fabi.Rest.Api.Logging\obj\Debug\netstandard2.0\Fabi.Rest.Api.Logging.pdb
